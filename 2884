@@ -1,0 +1,23 @@
+import java.util.Scanner; //Scanner 클래스 포함
+public class Alarm {
+
+	public static void main(String[] args) {
+		Scanner in = new Scanner(System.in);
+		int hour = in.nextInt(); //시
+		int minute = in.nextInt(); //분
+		
+		if(minute < 45) {
+			hour--;
+			minute = 60 -(45 - minute);
+			if(hour < 0) {
+				hour = 23;
+			}
+			System.out.println(hour + " " + minute);
+		}
+		else {
+			System.out.println(hour + " " + (minute -45));
+		}
+
+	}
+
+}
