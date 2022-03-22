@@ -1,0 +1,9 @@
+public class Main {
+
+	public static void main(String[] args) {
+		int n1 = 16 ;
+		System.out.println(Integer.toBinaryString(n1));
+		String bin = Integer.toBinaryString(n1);
+		System.out.println(bin);
+	}
+}
